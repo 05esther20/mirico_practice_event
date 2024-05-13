@@ -124,27 +124,37 @@ $fontColorDarkBeige : #B2A569;
       }
 
       }
-
-      .titleArea{
-        p{
-          font-size: 24px;
-        }
+      .beforeround{
+        position: relative;
+      }
+      .beforeround:before{
+        position: absolute;
+        content: "";
+        left:0; top:-30px;
         width: 468px;
         height: 568px;
         background-color: #FFEBB7;
         border-radius: 20px; /* 둥근 사각형 모서리를 위한 값 */
         padding: 20px; /* 텍스트와 경계 사이의 간격을 조절하기 위해 사용 */
+      }
+
+      .titleArea{
+        p{
+          font-size: 24px;
+        }      
         margin: 0;
+       
       }
 
 
 
       .eventlist{
-        transform: translate(-5%, 10%);
+        // transform: translate(-5%, 10%);
         @media (max-width:768px) {
           transform: translate(0,0);
         }
         
+        margin-top: 30px;
         li{
             border-radius: 10px;
             max-width: 100%;

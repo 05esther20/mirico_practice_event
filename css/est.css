@@ -97,12 +97,23 @@
   text-align: center;
 }
 
-.titleArea {
+.beforeround {
+  position: relative;
+}
+
+.beforeround:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -30px;
   width: 468px;
   height: 568px;
   background-color: #FFEBB7;
   border-radius: 20px; /* 둥근 사각형 모서리를 위한 값 */
   padding: 20px; /* 텍스트와 경계 사이의 간격을 조절하기 위해 사용 */
+}
+
+.titleArea {
   margin: 0;
 }
 .titleArea p {
@@ -110,7 +121,7 @@
 }
 
 .eventlist {
-  transform: translate(-5%, 10%);
+  margin-top: 30px;
 }
 @media (max-width: 768px) {
   .eventlist {
