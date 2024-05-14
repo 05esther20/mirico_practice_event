@@ -14,6 +14,14 @@ $fontColorGray : #989797;
 $fontColorSoftGray : #F2F2F2;
 $fontColorDarkBeige : #B2A569;
 
+.est_hd{
+  ul{
+    li{
+      font-weight: 600;
+    }
+  }
+}
+
 .textbig{
     letter-spacing: -0.085rem;
     font-family: "IBM Plex Sans KR";

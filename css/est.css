@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.est_hd ul li {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
 .textbig {
   letter-spacing: -0.085rem;
   font-family: "IBM Plex Sans KR";
