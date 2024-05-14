@@ -143,8 +143,14 @@
   font-size: 20px;
   margin: 1.3rem;
 }
-.eventlist li.eventfirst img {
+.eventlist li.eventfirst .thumbimg img {
   margin-top: -6rem;
+}
+.eventlist li .eventarrow img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: auto !important;
 }
 .eventlist li.eventsecond img {
   height: 224px;
@@ -154,7 +160,7 @@
     width: 100%;
   }
 }
-.eventlist li a {
+.eventlist a {
   color: #333333;
   text-decoration: none;
   list-style: none;
@@ -162,7 +168,7 @@
   height: 224px;
 }
 @media (max-width: 768px) {
-  .eventlist li a {
+  .eventlist a {
     width: 100%;
     height: auto;
   }
