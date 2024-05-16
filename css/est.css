@@ -1,7 +1,41 @@
 @charset "UTF-8";
 .est_hd ul li {
-  font-size: 5rem;
+  font-size: 1.2rem;
   font-weight: 600;
+}
+.est_hd a {
+  text-decoration: none;
+}
+.est_hd .gnb .d1:hover ul {
+  max-height: 180px !important;
+}
+.est_hd .gnb .d1 .gnb_d1_a {
+  color: black;
+  font-size: 1.2em;
+}
+.est_hd .gnb ul {
+  min-width: 80px;
+  white-space: nowrap;
+  max-height: 0;
+  transition: max-height 0.5s;
+  padding: 0 1rem !important;
+  border: 0 !important;
+  overflow: hidden;
+}
+.est_hd .gnb ul li a {
+  font-size: 0.8em !important;
+  font-weight: 400 !important;
+}
+.est_hd .gnb ul li a:hover {
+  font-weight: 700 !important;
+}
+.est_hd .gnb ul:before, .est_hd .gnb ul:after {
+  content: "";
+  display: block;
+  height: 16px;
+}
+.est_hd .gnb ul.leftul {
+  left: -2rem;
 }
 
 .textbig {

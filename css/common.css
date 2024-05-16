@@ -1,6 +1,21 @@
+@charset "UTF-8";
+/*공통 스타일*/
 body * {
-  letter-spacing: -0.085rem;
-  font-family: "IBM Plex Sans KR";
+  font-family: "IBM Plex Sans KR", sans-serif !important;
+  color: #333333;
+  letter-spacing: -1px;
+}
+
+.container-1400 {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-1824 {
+  max-width: 1824px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 #mainTitle h2 {
