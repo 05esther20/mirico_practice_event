@@ -168,6 +168,7 @@
   }
 }
 .eventlist li {
+  position: relative;
   border-radius: 10px;
   max-width: 100%;
   height: 450px;
@@ -185,11 +186,47 @@
 .eventlist li.eventfirst .thumbimg img {
   margin-top: -6rem;
 }
-.eventlist li .eventarrow img {
+@keyframes arrowAnimationBefore {
+  from {
+    margin-right: 30px;
+    opacity: 0;
+  }
+  to {
+    margin-right: 0;
+    opacity: 1;
+  }
+}
+@keyframes arrowAnimationAfter {
+  from {
+    margin-right: 0;
+    opacity: 1;
+  }
+  to {
+    margin-right: -40px;
+    opacity: 0;
+  }
+}
+.eventlist li .eventarrow {
   position: absolute;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
+  width: 42px;
+  height: 30px;
+  overflow: hidden;
+}
+.eventlist li .eventarrow svg {
   height: auto !important;
+  transition: opacity 0.2s, margin 0.2s;
+}
+.eventlist li .eventarrow svg.yellow {
+  position: absolute;
+  margin-right: -80px;
+}
+.eventlist li .eventarrow:hover svg.gray {
+  animation: arrowAnimationBefore 0.3s forwards 0.3s;
+}
+.eventlist li .eventarrow:hover svg.yellow {
+  animation: arrowAnimationAfter 0.3s forwards;
 }
 .eventlist li.eventsecond img {
   height: 224px;
