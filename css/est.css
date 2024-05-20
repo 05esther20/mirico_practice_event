@@ -188,22 +188,22 @@
 }
 @keyframes arrowAnimationBefore {
   from {
-    margin-right: 30px;
-    opacity: 0;
-  }
-  to {
     margin-right: 0;
     opacity: 1;
+  }
+  to {
+    margin-right: -42px;
+    opacity: 0;
   }
 }
 @keyframes arrowAnimationAfter {
   from {
-    margin-right: 0;
-    opacity: 1;
+    right: 42px;
+    opacity: 0;
   }
   to {
-    margin-right: -40px;
-    opacity: 0;
+    right: 0;
+    opacity: 1;
   }
 }
 .eventlist li .eventarrow {
@@ -215,18 +215,23 @@
   overflow: hidden;
 }
 .eventlist li .eventarrow svg {
+  position: absolute;
+  right: 0;
   height: auto !important;
-  transition: opacity 0.2s, margin 0.2s;
+}
+.eventlist li .eventarrow svg.gray {
+  transition: opacity 0.2s, margin-right 0.2s;
 }
 .eventlist li .eventarrow svg.yellow {
-  position: absolute;
-  margin-right: -80px;
+  opacity: 0;
+  right: 42px;
+  transition: opacity 0.2s, right 0.2s;
 }
 .eventlist li .eventarrow:hover svg.gray {
-  animation: arrowAnimationBefore 0.3s forwards 0.3s;
+  animation: arrowAnimationBefore 0.3s forwards;
 }
 .eventlist li .eventarrow:hover svg.yellow {
-  animation: arrowAnimationAfter 0.3s forwards;
+  animation: arrowAnimationAfter 0.3s forwards 0.3s;
 }
 .eventlist li.eventsecond img {
   height: 224px;

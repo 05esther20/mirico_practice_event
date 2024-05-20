@@ -253,24 +253,24 @@ $fontColorDarkBeige : #B2A569;
 
             @keyframes arrowAnimationBefore {
               from {
-                  margin-right: 30px;
-                  opacity: 0;
+                margin-right: 0;
+                opacity: 1;
               }
               to {
-                  margin-right: 0;
-                  opacity: 1;
+                  margin-right: -42px;
+                  opacity: 0;
               }
-          }
-            @keyframes arrowAnimationAfter {
+            }
+            @keyframes arrowAnimationAfter {              
               from {
-                  margin-right: 0;
-                  opacity: 1;
+                right: 42px;
+                opacity: 0;
               }
               to {
-                  margin-right: -40px;
-                  opacity: 0;
+                  right: 0;
+                  opacity: 1;
               }
-          }
+            }
             .eventarrow{
               position: absolute;
               bottom: 1rem;
@@ -279,22 +279,25 @@ $fontColorDarkBeige : #B2A569;
               height: 30px;
               overflow: hidden;
               svg{
+                position: absolute;
+                right: 0;
                 height: auto !important;
-                transition: opacity 0.2s, margin 0.2s;
-                &.gray {
+                &.gray {                  
+                  transition: opacity 0.2s, margin-right 0.2s;
                 }
                 &.yellow {
-                  position: absolute;
-                  margin-right: -80px;
+                  opacity: 0;
+                  right: 42px;
+                  transition: opacity 0.2s, right 0.2s;
                 }
               }
               &:hover{
                 svg {
                   &.gray {
-                    animation: arrowAnimationBefore 0.3s forwards 0.3s;
+                    animation: arrowAnimationBefore 0.3s forwards;
                   }
                   &.yellow {
-                    animation: arrowAnimationAfter 0.3s forwards;
+                    animation: arrowAnimationAfter 0.3s forwards 0.3s;
                   }
                 }
               }
