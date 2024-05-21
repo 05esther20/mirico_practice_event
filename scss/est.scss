@@ -14,7 +14,12 @@ $fontColorGray : #989797;
 $fontColorSoftGray : #F2F2F2;
 $fontColorDarkBeige : #B2A569;
 
-.est_hd{
+
+//헤더
+.est_hd{ 
+  
+  background-color: #85BD91;
+  max-width: 3000px;
   ul{
     li{
       font-size: 1.2rem;
@@ -27,9 +32,9 @@ $fontColorDarkBeige : #B2A569;
     //텍스트에 기본으로 삽입된 밑줄 삭제
 }
 .gnb{
+
     .d1{
 
-      
         //대메뉴 li
         &:hover{
             //대메뉴에 롤오버시 소메뉴 노출
@@ -81,19 +86,58 @@ $fontColorDarkBeige : #B2A569;
 
 //메인
 #mainE{
+    background-color: #85BD91;
+    padding-bottom: 150px !important;
+    font-size: 2rem;
+    max-width: 3000px;
+    color:#333333;
+    padding-top: 150px;
+    position: relative;
+    a
+    {
+      text-decoration: none;
+    }
+  
+    .beforeWhiteE:before{
+      position: absolute;
+      content: "";
+      left:0; top: 750px;
+      width: 3000px;
+      height: 360px;
+      background-color: white;
+      z-index: 1;
+    }
+
+
+  .txtButtonE{
+    font-size: 1.5rem !important;
+    color: white;
+    border-radius: 50%;
+
+  }
+
+  .learnMoreMainE{
+    font-size: 1.3rem !important;
+  }
   .mainTitleE{
-    .maintxtTitleE{
+   position: relative;
+    &.maintxtTitleE{ 
+      position: absolute;
+      top:500px;
       
     }
   }
   .mainImgE{
-    width: 1140px;
-    height: 700px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
     img{
       border-radius: 20px;
         }
   }
-}
+
 
 
 
@@ -164,6 +208,8 @@ $fontColorDarkBeige : #B2A569;
 
     
     //이벤트
+#eventE{
+    margin-top: 150px !important;
 
     .titleAreaE:before{
 
@@ -357,7 +403,7 @@ $fontColorDarkBeige : #B2A569;
           }
         }
         
-        
+      }    
         .des4{
         
         min-height: 4rem;
