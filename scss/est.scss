@@ -79,6 +79,28 @@ $fontColorDarkBeige : #B2A569;
 }
 
 
+//메인
+#mainE{
+  .mainTitleE{
+    .maintxtTitleE{
+      
+    }
+  }
+  .mainImgE{
+    width: 1140px;
+    height: 700px;
+    img{
+      border-radius: 20px;
+        }
+  }
+}
+
+
+
+
+
+
+
 .textbig{
     letter-spacing: -0.085rem;
     font-family: "IBM Plex Sans KR";
@@ -166,6 +188,7 @@ $fontColorDarkBeige : #B2A569;
       .containerE
       {  letter-spacing: -0.085rem;
         font-family: "IBM Plex Sans KR";
+
         h3{
           font-size: 30px;
           font-weight: bold;
@@ -240,6 +263,9 @@ $fontColorDarkBeige : #B2A569;
             
             }
             &.eventFirstE{
+
+              margin-right: 1rem;
+              
               .thumbImgE{
 
                 img{ 

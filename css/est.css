@@ -38,6 +38,14 @@
   left: -2rem;
 }
 
+#mainE .mainImgE {
+  width: 1140px;
+  height: 700px;
+}
+#mainE .mainImgE img {
+  border-radius: 20px;
+}
+
 .textbig {
   letter-spacing: -0.085rem;
   font-family: "IBM Plex Sans KR";
